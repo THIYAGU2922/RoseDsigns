@@ -128,7 +128,7 @@ export const ContactPage: React.FC = () => {
       <section className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            
+
             {/* Left Column: Interactive Contact Form */}
             <div className="lg:col-span-7 bg-white p-8 sm:p-12 border border-[#C9C1B8]/60 shadow-xl">
               {submitted ? (
@@ -268,7 +268,7 @@ export const ContactPage: React.FC = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+61 400 000 000"
+                        placeholder="+91 1234567890"
                         className="w-full bg-[#F7F3EC] border border-[#C9C1B8] px-4 py-3 text-sm text-[#171514] focus:outline-none focus:border-[#A76570] transition-colors"
                       />
                     </div>
@@ -361,7 +361,7 @@ export const ContactPage: React.FC = () => {
 
             {/* Right Column: Studio Information & Social Links */}
             <div className="lg:col-span-5 space-y-8">
-              
+
               {/* Direct Studio Box */}
               <div className="p-8 bg-[#172536] text-[#F7F3EC] border border-[#B08A57]/40 shadow-xl space-y-6">
                 <div>
@@ -468,9 +468,8 @@ export const ContactPage: React.FC = () => {
                       {faq.q}
                     </span>
                     <ChevronDown
-                      className={`w-5 h-5 text-[#A76570] shrink-0 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180' : ''
-                      }`}
+                      className={`w-5 h-5 text-[#A76570] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''
+                        }`}
                     />
                   </button>
                   <AnimatePresence>
